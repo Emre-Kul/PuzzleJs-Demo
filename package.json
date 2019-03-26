@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "puzzle-microfrontends": "^3.9.6"
+    "puzzle-microfrontends": "^3.20.2"
   }
 }

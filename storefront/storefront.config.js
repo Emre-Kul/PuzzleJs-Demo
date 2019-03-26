@@ -5,11 +5,11 @@ module.exports = {
   gateways: [
     {
       name: 'browsing-gateway',
-      url: 'http://localhost:4445'
+      url: process.env.BROWSING_GW_URL || 'http://localhost:4445'
     },
     {
       name: 'user-gateway',
-      url: 'http://localhost:4446'
+      url: process.env.USER_GW_URL || 'http://localhost:4446'
     }
   ],
   pages: [
@@ -18,6 +18,6 @@ module.exports = {
       url: "/"
     }
   ],
-  port: 4444,
+  port: process.env.PORT || 4444,
   dependencies: []
 };

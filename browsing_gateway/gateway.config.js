@@ -1,7 +1,7 @@
-{
+module.exports = {
   "name": "browsing-gateway",
-  "port": 4445,
-  "url": "http://localhost:4445/",
+  "port": process.env.PORT || 4445,
+  "url": process.env.BROWSING_GW_URL || "http://localhost:4445/",
   "fragments": [
     {
       "name": "header",

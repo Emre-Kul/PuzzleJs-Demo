@@ -1,7 +1,7 @@
-{
+module.exports = {
   "name": "user-gateway",
-  "port": 4446,
-  "url": "http://localhost:4446/",
+  "port": process.env.PORT || 4446,
+  "url": process.env.USER_GW_URL || "http://localhost:4446/",
   "fragments": [
     {
       "name": "sidemenu",
